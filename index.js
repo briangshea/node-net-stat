@@ -2,7 +2,9 @@ var fs = require('fs');
 
 module.exports = {
   totalRx: totalRx,
+  packetsRx: packetsRx,
   totalTx: totalTx,
+  packetsTx: packetsTx,
   usageRx: usageRx,
   usageTx: usageTx,
   raw: raw,
@@ -27,6 +29,18 @@ function totalRx(opts) {
   return converted;
 }
 
+function packetsRx(opts) {
+  if (opts) {
+    opts.iface = opts.iface || 'lo';
+  } else {
+    opts = {
+      iface: 'lo'
+    };
+  }
+
+  return parseInt(_parseProcNetDev()[opts.iface].packets.receive);
+}
+
 function totalTx(opts) {
   if (opts) {
     opts.iface = opts.iface || 'lo';
@@ -42,6 +56,18 @@ function totalTx(opts) {
   var converted = _bytesTo(total, opts.units);
 
   return converted;
+}
+
+function packetsTx(opts) {
+  if (opts) {
+    opts.iface = opts.iface || 'lo';
+  } else {
+    opts = {
+      iface: 'lo'
+    };
+  }
+
+  return parseInt(_parseProcNetDev()[opts.iface].packets.transmit);
 }
 
 function usageRx(opts, cb) {
