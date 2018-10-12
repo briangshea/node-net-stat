@@ -1,15 +1,38 @@
 {
-  "name": "net-stat",
-  "version": "2.0.1",
+  "_from": "net-stat",
+  "_id": "net-stat@2.0.1",
+  "_inBundle": false,
+  "_integrity": "sha1-5t6LL+ass+Cak/034xM8xQ9s4Z0=",
+  "_location": "/net-stat",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "net-stat",
+    "name": "net-stat",
+    "escapedName": "net-stat",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/net-stat/-/net-stat-2.0.1.tgz",
+  "_shasum": "e6de8b2fe6acb3e09a93fd37e3133cc50f6ce19d",
+  "_spec": "net-stat",
+  "_where": "/home/brian/Projects/unpnd-server",
+  "author": {
+    "name": "jub3i"
+  },
+  "bugs": {
+    "url": "https://github.com/jub3i/node-net-stat/issues"
+  },
+  "bundleDependencies": false,
+  "deprecated": false,
   "description": "Network statistics",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/jub3i/node-net-stat"
-  },
+  "homepage": "https://github.com/jub3i/node-net-stat#readme",
   "keywords": [
     "network",
     "usage",
@@ -19,9 +42,15 @@
     "transmitted",
     "interface"
   ],
-  "bugs": {
-    "url": "https://github.com/jub3i/node-net-stat/issues"
+  "license": "MIT",
+  "main": "index.js",
+  "name": "net-stat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jub3i/node-net-stat.git"
   },
-  "author": "jub3i",
-  "license": "MIT"
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "2.0.1"
 }
